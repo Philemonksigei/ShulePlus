@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_frag">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_navfrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_layout"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="15dp">
+
+        <TextView
+            android:id="@+id/h1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llayout_00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcome_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E2E2"
+                android:gravity="right"
+                android:text="Mr. Benard Onyango"
+                android:textColor="#1233EF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/notifications_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_notifications_btn"
+                android:background="@drawable/bg_notifigation"
+                android:gravity="right"
+                android:shadowColor="#AB67B6"
+                android:text="Notifigations/Announcements"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/academics_btn"
+                style="academics_btn"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="@dimen/nav_button_height"
+                android:layout_margin="@dimen/margin_buttons"
+                android:layout_weight="1"
+                android:background="@drawable/bg_navbuttons"
+                android:text="Academics"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/fees_btn"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="@dimen/nav_button_height"
+                android:layout_margin="@dimen/margin_buttons"
+                android:layout_weight="1"
+                android:background="@drawable/bg_navbuttons"
+                android:text="School Fees"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cocaricular_btn"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_navbuttons"
+                android:text="Co-Caricular"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#040404"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/health_btn"
+                style="health_btn"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="@dimen/nav_button_height"
+                android:layout_margin="@dimen/margin_buttons"
+                android:layout_weight="1"
+                android:background="@drawable/bg_navbuttons"
+                android:text="Health Info"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_04"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/behavioral_btn"
+                style="behavioural_btn"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="@dimen/nav_button_height"
+                android:layout_margin="@dimen/margin_buttons"
+                android:layout_weight="1"
+                android:background="@drawable/bg_navbuttons"
+                android:text="Behavioral Info"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/suggestions_btn"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="@dimen/nav_button_height"
+                android:layout_margin="@dimen/margin_buttons"
+                android:layout_weight="1"
+                android:background="@drawable/bg_navbuttons"
+                android:text="Suggestion Box"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_button_height">130dp</dimen>
+    <dimen name="margin_buttons">5dp</dimen>
+    <dimen name="nav_btn_width">50dp</dimen>
+    <dimen name="margin_top_firstlinearlayout">50dp</dimen>
+    <dimen name="height_notifications_btn">60dp</dimen>
+</resources>
