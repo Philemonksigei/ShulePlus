@@ -9,48 +9,72 @@
     tools:context=".acad_frag">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/acd_tittle"
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="ACADEMIC REPORT "
-        android:textColor="#0E0E0E"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layout"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_standard">
 
-    <Spinner
-        android:id="@+id/spinner_acad_yr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acd_tittle" />
+        <TextView
+            android:id="@+id/acd_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ACADEMIC REPORT "
+            android:textColor="#0E0E0E"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/year_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Year"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_acad_yr"
-        app:layout_constraintHorizontal_bias="0.768"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acd_tittle" />
+        <TextView
+            android:id="@+id/stdname_admno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Denis Kiptoo ADM 0345"
+            android:textColor="#1435EC"
+            android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_academics"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F6F1F1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_acad_yr"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/class_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CLASS AND STREAM"
+            android:textColor="#9C27B0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/year_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_standard"
+                android:text="Year"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/spinner_acad_yr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_standard"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_academics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F1F1" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
